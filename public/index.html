@@ -12,19 +12,97 @@
     />
     <title>Kid B. Travel</title>
   </head>
-  <body>
+  <body class="font-montserrat">
     <header>
       <nav></nav>
       <section id="tab-bar"></section>
     </header>
 
-    <main>
-      <section id="home"></section>
+    <main class="w-full h-screen">
+      <section id="home" class="w-full h-3/5 relative">
+        <img
+          class="w-full h-full absolute -z-10 object-cover"
+          src="./img/sanFrancisco.jpg"
+          alt="Background image of San Francisco"
+        />
+
+        <article class="flex flex-col gap-5 w-full h-full pt-5 px-5">
+          <div
+            class="flex justify-center items-center self-end w-14 h-8 bg-white rounded-full shadow-sm"
+          >
+            <img class="size-5" src="./svg/moon.svg" alt="Moon icon" />
+          </div>
+
+          <div class="self-center relative w-full max-w-xl">
+            <img
+              class="absolute left-3 top-1/2 -translate-y-1/2"
+              src="./svg/search.svg"
+              alt="Search icon"
+            />
+
+            <input
+              class="self-center w-full h-12 pl-10 pr-4 text-center text-wrap rounded-full outline-none shadow-md"
+              type="search"
+              name="input"
+              id="input"
+              placeholder="Search"
+            />
+          </div>
+
+          <button
+            class="self-center w-2/4 min-w-36 max-w-52 h-12 min-h-10 max-h-12 mb-8 mt-auto rounded-full shadow-md text-primary font-bold bg-white"
+          >
+            Explore More
+          </button>
+        </article>
+      </section>
+
       <section id="recommendations"></section>
+
       <section id="trendings"></section>
+
       <section id="faqs"></section>
     </main>
 
     <footer></footer>
   </body>
 </html>
+
+<!-- AUXILIARY CODE -->
+<!-- <section id="home" class="w-full h-3/5 relative">
+  <img
+    class="w-full h-full absolute -z-10 object-cover"
+    src="./img/sanFrancisco.jpg"
+    alt="Background image of San Francisco"
+  />
+
+  <div class="flex flex-col gap-5 pt-5 px-5">
+    <div
+      class="flex justify-center items-center self-end w-14 h-8 bg-white rounded-full shadow-sm"
+    >
+      <img class="size-5" src="./svg/moon.svg" alt="Moon icon" />
+    </div>
+
+    <div class="self-center relative w-full max-w-xl">
+      <img
+        class="absolute left-3 top-1/2 -translate-y-1/2"
+        src="./svg/search.svg"
+        alt="Search icon"
+      />
+
+      <input
+        class="justify-self-center w-full h-12 pl-10 pr-4 text-center text-wrap rounded-full outline-none shadow-md"
+        type="search"
+        name="input"
+        id="input"
+        placeholder="Search"
+      />
+    </div>
+  </div>
+
+  <button
+    class="absolute bottom-0 left-1/2 w-2/4 min-w-32 max-w-52 h-12 mb-8 rounded-full shadow-md text-primary font-bold bg-white -translate-x-1/2"
+  >
+    Explore More
+  </button>
+</section> -->
