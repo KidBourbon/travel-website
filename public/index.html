@@ -12,7 +12,7 @@
     />
     <title>Kid B. Travel</title>
   </head>
-  <body class="font-montserrat">
+  <body class="font-montserrat scroll-smooth">
     <header>
       <nav></nav>
       <section id="tab-bar"></section>
@@ -26,7 +26,7 @@
           alt="Background image of San Francisco"
         />
 
-        <article class="flex flex-col gap-5 w-full h-full pt-5 px-5">
+        <div class="flex flex-col gap-5 w-full h-full pt-5 px-5">
           <div
             class="flex justify-center items-center self-end w-14 h-8 bg-white rounded-full shadow-sm"
           >
@@ -42,22 +42,97 @@
 
             <input
               class="self-center w-full h-12 pl-10 pr-4 text-center text-wrap rounded-full outline-none shadow-md"
-              type="search"
-              name="input"
               id="input"
+              name="input"
               placeholder="Search"
+              type="search"
             />
           </div>
 
           <button
             class="self-center w-2/4 min-w-36 max-w-52 h-12 min-h-10 max-h-12 mb-8 mt-auto rounded-full shadow-md text-primary font-bold bg-white"
+            id="button-explore"
           >
             Explore More
           </button>
-        </article>
+        </div>
       </section>
 
-      <section id="recommendations"></section>
+      <section id="recommendations" class="mt-6">
+        <h1 class="pl-5 text-2xl text-primary font-bold">Recommendations</h1>
+
+        <div
+          class="flex flex-row gap-5 mt-4 pb-4 px-5 overflow-x-auto overscroll-contain"
+        >
+          <article class="card">
+            <div class="w-full h-3/5">
+              <img
+                class="w-full h-full object-cover rounded-t-lg"
+                src="./img/norway.jpg"
+                alt="Image with a landscape of Norway"
+              />
+            </div>
+
+            <div
+              class="w-full h-2/5 p-2 overflow-y-scroll text-white rounded-b-lg bg-secondary"
+            >
+              <h2 class="text-sm font-bold tracking-wider">Norway</h2>
+              <p class="mt-1 text-xs tracking-wide">Beautiful landscapes</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="w-full h-3/5">
+              <img
+                class="w-full h-full object-cover rounded-t-lg"
+                src="./img/new_york.jpg"
+                alt="Image with New York City"
+              />
+            </div>
+
+            <div
+              class="w-full h-2/5 p-2 overflow-y-scroll text-tertiary rounded-b-lg bg-white"
+            >
+              <h2 class="text-sm font-bold tracking-wider">New York</h2>
+              <p class="mt-1 text-xs tracking-wide">Concrete jungle</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="w-full h-3/5">
+              <img
+                class="w-full h-full object-cover rounded-t-lg"
+                src="./img/yosemite.jpg"
+                alt="Image with a landscape of Yosemite"
+              />
+            </div>
+
+            <div
+              class="w-full h-2/5 p-2 overflow-y-scroll text-white rounded-b-lg bg-secondary"
+            >
+              <h2 class="text-sm font-bold tracking-wider">Yosemite</h2>
+              <p class="mt-1 text-xs tracking-wide">A break from the world</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="w-full h-3/5">
+              <img
+                class="w-full h-full object-cover rounded-t-lg"
+                src="./img/seattle.jpg"
+                alt="Image with the city of Seattle"
+              />
+            </div>
+
+            <div
+              class="w-full h-2/5 p-2 overflow-y-scroll text-tertiary rounded-b-lg bg-white"
+            >
+              <h2 class="text-sm font-bold tracking-wider">Seattle</h2>
+              <p class="mt-1 text-xs tracking-wide">Big city</p>
+            </div>
+          </article>
+        </div>
+      </section>
 
       <section id="trendings"></section>
 
