@@ -3,7 +3,23 @@
 @tailwind utilities;
 
 @layer components {
-  .card {
+  .card--sm {
     @apply w-40 h-48 shadow-md flex-none transform transition-all hover:-translate-y-4 hover:shadow-xl;
+  }
+
+  .card--lg {
+    @apply w-full max-w-80 h-96 shadow-sm relative rounded-2xl transform transition-all hover:scale-105 hover:shadow-none hover:ring-2 hover:ring-secondary;
+  }
+
+  .card--lg__info {
+    @apply w-full absolute top-0 pt-10 px-5 text-white;
+  }
+
+  .carg--lg__title {
+    @apply text-2xl tracking-wide font-black;
+  }
+
+  .carg--lg__description {
+    @apply mt-2 text-base tracking-wide font-medium leading-5;
   }
 }
