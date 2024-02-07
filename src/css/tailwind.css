@@ -8,7 +8,7 @@
   }
 
   .card--lg {
-    @apply w-full max-w-96 h-96 shadow-sm relative rounded-2xl transform transition-all hover:scale-105 hover:shadow-none hover:ring-2 hover:ring-secondary;
+    @apply w-full h-96 shadow-sm relative rounded-2xl transform transition-all hover:scale-105 hover:shadow-none hover:ring-2 hover:ring-secondary;
   }
 
   .card--lg__info {
