@@ -8,11 +8,11 @@
   }
 
   .card--lg {
-    @apply w-full max-w-80 h-96 shadow-sm relative rounded-2xl transform transition-all hover:scale-105 hover:shadow-none hover:ring-2 hover:ring-secondary;
+    @apply w-full max-w-96 h-96 shadow-sm relative rounded-2xl transform transition-all hover:scale-105 hover:shadow-none hover:ring-2 hover:ring-secondary;
   }
 
   .card--lg__info {
-    @apply w-full absolute top-0 pt-10 px-5 text-white;
+    @apply w-full w-4/5 absolute top-0 pt-10 px-5 text-white;
   }
 
   .carg--lg__title {
