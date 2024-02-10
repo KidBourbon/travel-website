@@ -4,22 +4,50 @@
 
 @layer components {
   .card--sm {
-    @apply w-40 h-48 shadow-md flex-none transform transition-all hover:-translate-y-4 hover:shadow-xl;
+    @apply w-40 md:w-48 lg:w-56 h-48 md:h-60 lg:h-72 shadow-md flex-none transform transition-all hover:-translate-y-4 hover:shadow-xl;
+  }
+
+  .card--sm__info {
+    @apply w-full h-2/5 p-3 overflow-y-auto rounded-b-lg;
+  }
+
+  .card--sm__title {
+    @apply text-sm md:text-base lg:text-lg font-bold tracking-wider;
+  }
+
+  .card--sm__description {
+    @apply mt-1 text-xs md:text-sm tracking-wide;
   }
 
   .card--lg {
-    @apply w-full h-96 shadow-sm relative rounded-2xl transform transition-all hover:scale-105 hover:shadow-none hover:ring-2 hover:ring-secondary;
+    @apply w-full h-96 md:h-72 lg:h-96 shadow-sm md:shadow-none relative rounded-2xl transform transition-all hover:scale-105 md:hover:scale-100 hover:shadow-none hover:ring-2 hover:ring-secondary;
   }
 
   .card--lg__info {
-    @apply w-full w-4/5 absolute top-0 pt-10 px-5 text-white;
+    @apply w-4/5 absolute top-0 md:right-0 mt-10 mx-5 text-white md:text-right;
   }
 
-  .carg--lg__title {
-    @apply text-2xl tracking-wide font-black;
+  .card--lg__title {
+    @apply text-2xl tracking-wide font-extrabold;
   }
 
-  .carg--lg__description {
-    @apply mt-2 text-base tracking-wide font-medium leading-5;
+  .card--lg__description {
+    @apply mt-2 text-base tracking-wide font-medium lg:font-semibold leading-5;
   }
 }
+
+/* .card--lg {
+  @apply w-full max-w-5xl relative rounded-2xl transform transition-all hover:scale-y-105 hover:shadow-none hover:ring-2 hover:ring-secondary;
+}
+
+.card--lg__info {
+  @apply w-4/5 absolute top-0 pt-10 px-5 text-white;
+}
+
+.carg--lg__title {
+  @apply text-2xl tracking-wide font-black;
+}
+
+.carg--lg__description {
+  @apply mt-2 text-base tracking-wide font-medium leading-5;
+} */
