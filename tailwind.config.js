@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./public/index.html"],
+  darkMode: "class",
   theme: {
     extend: {
       backgroundImage: {
@@ -26,6 +27,11 @@ module.exports = {
       },
       fontFamily: {
         montserrat: ["Montserrat", "sans-serif"],
+      },
+      height: {
+        md: "28rem",
+        lg: "32rem",
+        xl: "36rem",
       },
     },
   },
