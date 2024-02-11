@@ -4,9 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "tw-build": "npx tailwind -i ./src/css/tailwind.css -o ./public/css/tailwind.css",
-    "tw-watch": "npx tailwind -i ./src/css/tailwind.css -o ./public/css/tailwind.css --watch"
+    "tw-build": "npx tailwindcss -i ./src/css/tailwind.css -o ./public/css/tailwind.css --minify",
+    "tw-watch": "npx tailwindcss -i ./src/css/tailwind.css -o ./public/css/tailwind.css --minify --watch"
   },
   "author": "Leonardo Collazo Klenina <kidbourbongamer@gmail.com>",
   "license": "MIT",
