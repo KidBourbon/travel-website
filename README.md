@@ -7,7 +7,7 @@
 
 ✅ The website is fully responsive to larger screen devices such as tablets and desktop PCs.
 
-✅ Light and dark mode was implemented with Tailwind CSS.
+✅ Light and dark modes were implemented with Tailwind CSS.
 
 ✅ It has several animations that decorate the design.
 
