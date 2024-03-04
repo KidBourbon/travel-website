@@ -1,4 +1,5 @@
 # Kid B. Travel
+
 ✅ Website with incredible photos of places where you could travel to take a vacation.
 
 ✅ Made with HTML, Tailwind CSS and JavaScript.
