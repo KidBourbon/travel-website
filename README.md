@@ -2,7 +2,7 @@
 
 ✅ Website with incredible photos of places where you could travel to take a vacation.
 
-✅ Made with HTML and Tailwind CSS.
+✅ Made with HTML, Tailwind CSS and JavaScript.
 
 ✅ Utility First and Mobile First principles were used.
 
